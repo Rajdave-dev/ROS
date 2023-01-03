@@ -6,6 +6,9 @@ Android 5.0 and up.
 Currently arm64 Androids.
 No armv7l, armhf, x86 or x86_64 are supported.
 
+# Bugs Report.
+You can report bugs on issues page or [Discord](https://google.com)
+
 # From Developer of this app.
 This app is created by a single person.
 You can help me by Donating. 
