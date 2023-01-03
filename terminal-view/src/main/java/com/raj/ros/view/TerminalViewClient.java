@@ -6,21 +6,11 @@ import android.view.ScaleGestureDetector;
 
 import com.raj.ros.terminal.TerminalSession;
 
-/**
- * Input and scale listener which may be set on a {@link TerminalView} through
- * {@link TerminalView#setOnKeyListener(TerminalViewClient)}.
- * <p/>
- */
+
 public interface TerminalViewClient {
 
-    /**
-     * Callback function on scale events according to {@link ScaleGestureDetector#getScaleFactor()}.
-     */
     float onScale(float scale);
 
-    /**
-     * On a single tap on the terminal if terminal mouse reporting not enabled.
-     */
     void onSingleTapUp(MotionEvent e);
 
     boolean shouldBackButtonBeMappedToEscape();

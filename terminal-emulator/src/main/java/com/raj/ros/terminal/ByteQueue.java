@@ -1,6 +1,6 @@
 package com.raj.ros.terminal;
 
-/** A circular byte buffer allowing one producer and one consumer thread. */
+
 final class ByteQueue {
 
     private final byte[] mBuffer;
@@ -51,11 +51,7 @@ final class ByteQueue {
         return totalRead;
     }
 
-    /**
-     * Attempt to write the specified portion of the provided buffer to the queue.
-     * <p/>
-     * Returns whether the output was totally written, false if it was closed before.
-     */
+    
     public boolean write(byte[] buffer, int offset, int lengthToWrite) {
         if (lengthToWrite + offset > buffer.length) {
             throw new IllegalArgumentException("length + offset > buffer.length");
@@ -83,12 +79,6 @@ final class ByteQueue {
                     int tail = mHead + mStoredBytes;
                     int oneRun;
                     if (tail >= bufferLength) {
-                        // Buffer: [.............]
-                        // ________________H_______T
-                        // =>
-                        // Buffer: [.............]
-                        // ___________T____H
-                        // onRun= _____----_
                         tail = tail - bufferLength;
                         oneRun = mHead - tail;
                     } else {

@@ -5,7 +5,7 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 
-/** A combination of {@link GestureDetector} and {@link ScaleGestureDetector}. */
+
 final class GestureAndScaleRecognizer {
 
     public interface Listener {
@@ -55,7 +55,7 @@ final class GestureAndScaleRecognizer {
                 mListener.onLongPress(e);
                 isAfterLongPress = true;
             }
-        }, null, true /* ignoreMultitouch */);
+        }, null, true);
 
         mGestureDetector.setOnDoubleTapListener(new GestureDetector.OnDoubleTapListener() {
             @Override
@@ -97,8 +97,6 @@ final class GestureAndScaleRecognizer {
                 break;
             case MotionEvent.ACTION_UP:
                 if (!isAfterLongPress) {
-                    // This behaviour is desired when in e.g. vim with mouse events, where we do not
-                    // want to move the cursor when lifting finger after a long press.
                     mListener.onUp(event);
                 }
                 break;
