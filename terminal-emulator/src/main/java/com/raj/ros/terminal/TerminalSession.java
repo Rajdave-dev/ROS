@@ -288,7 +288,7 @@ public final class TerminalSession extends TerminalOutput {
             try {
                 Os.kill(mShellPid, OsConstants.SIGKILL);
             } catch (ErrnoException e) {
-                Log.w("termux", "Failed sending SIGKILL: " + e.getMessage());
+                Log.w("ros", "Failed sending SIGKILL: " + e.getMessage());
             }
         }
     }
