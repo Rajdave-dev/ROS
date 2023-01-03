@@ -24,3 +24,8 @@ No fees. Yet Donation recommended. As per your wish.
 
 # Currently Working on:
 Create binary for arm-v7, x86, x86_64.
+
+# Credits.
+1. Created by me(Raj dave, owner of Dave & co).
+2. Termux for Terminal and packages.
+
