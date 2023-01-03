@@ -1,0 +1,20 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/arm64/ROS/app/src/main/java/com/raj/ros/InstallerActivity.java",
+      "selection": {
+        "end": {
+          "column": 76,
+          "index": -1,
+          "line": 133
+        },
+        "start": {
+          "column": 76,
+          "index": -1,
+          "line": 133
+        }
+      }
+    }
+  ],
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/arm64/ROS/app/src/main/java/com/raj/ros/InstallerActivity.java"
+}

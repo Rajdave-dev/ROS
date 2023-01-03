@@ -131,7 +131,7 @@ public class InstallerActivity extends AppCompatActivity {
                     for (Pair<String, String> symlink : symlinks) {
                         Os.symlink(symlink.first, symlink.second);
                     }
-                    Helper.installROOTFS(InstallerActivity.this,R.raw.rootfs_proot);
+                    Helper.installROOTFS(InstallerActivity.this,R.raw.rootfs);
                     Helper.installROOTFS(InstallerActivity.this,R.raw.patch);
                     Shell.SH.run(new String[]{"."+Variables.SYSTEM_EXEC_DIR+"/busybox --install -s " + Variables.SYSTEM_EXEC_DIR});
                     startActivity(new Intent(InstallerActivity.this,TerminalActivity.class));
