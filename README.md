@@ -7,7 +7,7 @@ Currently arm64 Androids.
 No armv7l, armhf, x86 or x86_64 are supported.
 
 # Bugs Report.
-You can report bugs on issues page or [Discord](https://discord.gg/HyCxF3tjZY) or [Telegram](https://t.me/rosbydave).
+You can report bugs on [Issues](https://github.com/Rajdave-dev/ROS/issues) page or [Discord](https://discord.gg/HyCxF3tjZY) or [Telegram](https://t.me/rosbydave).
 
 # From Developer of this app.
 This app is created by a single person.
