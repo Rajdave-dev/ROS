@@ -3,17 +3,9 @@ package com.raj.ros.terminal;
 import java.util.Map;
 import java.util.Properties;
 
-/**
- * Color scheme for a terminal with default colors, which may be overridden (and then reset) from the shell using
- * Operating System Control (OSC) sequences.
- *
- * @see TerminalColors
- */
 public final class TerminalColorScheme {
 
-    /** http://upload.wikimedia.org/wikipedia/en/1/15/Xterm_256color_chart.svg, but with blue color brighter. */
-    private static final int[] DEFAULT_COLORSCHEME = {
-        // 16 original colors. First 8 are dim.
+     private static final int[] DEFAULT_COLORSCHEME = {
         0xff000000, // black
         0xffcd0000, // dim red
         0xff00cd00, // dim green
