@@ -6,6 +6,9 @@ Android 5.0 and up.
 Currently arm64 Androids.
 No armv7l, armhf, x86 or x86_64 are supported.
 
+# Download
+Currently in beta so download it from [Actions](https://github.com/Rajdave-dev/ROS/actions)
+
 # Bugs Report.
 You can report bugs on [Issues](https://github.com/Rajdave-dev/ROS/issues) page or [Discord](https://discord.gg/HyCxF3tjZY) or [Telegram](https://t.me/rosbydave).
 
