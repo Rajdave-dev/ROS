@@ -7,7 +7,7 @@ Currently arm64 Androids.
 No armv7l, armhf, x86 or x86_64 are supported.
 
 # Bugs Report.
-You can report bugs on issues page or [Discord](https://google.com)
+You can report bugs on issues page or [Discord](https://discord.gg/HyCxF3tjZY) or [Telegram](https://t.me/rosbydave).
 
 # From Developer of this app.
 This app is created by a single person.
@@ -18,3 +18,6 @@ No fees. Yet Donation recommended. As per your wish.
 
 # Donation
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/extremegamerzyt?country.x=IN&locale.x=en_GB)
+
+# Currently Working on:
+Create binary for arm-v7, x86, x86_64.
