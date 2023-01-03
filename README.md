@@ -1,11 +1,11 @@
 # ROS
-Run linux without any hassles. Varients- arm64 and amd64. For Android 5.0 and up.
+Run linux without any hassles. Varients- arm64 and amd64. For Android 7.0 and up.
 
 # Status
 [![Build Apk](https://github.com/Rajdave-dev/ROS/actions/workflows/android.yml/badge.svg?branch=master)](https://github.com/Rajdave-dev/ROS/actions/workflows/android.yml)
 
 # Requirements
-Android 5.0 and up.
+Android 7.0 and up.
 Currently arm64 Androids.
 No armv7l, armhf, x86 or x86_64 are supported.
 
