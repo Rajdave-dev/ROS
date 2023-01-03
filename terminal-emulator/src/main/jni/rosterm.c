@@ -98,13 +98,11 @@ static int create_subprocess(JNIEnv* env,
 
         if (chdir(cwd) != 0) {
             char* error_message;
-            // No need to free asprintf()-allocated memory since doing execvp() or exit() below.
             if (asprintf(&error_message, "chdir(\"%s\")", cwd) == -1) error_message = "chdir()";
             perror(error_message);
             fflush(stderr);
         }
         execvp(cmd, argv);
-        // Show terminal output about failing exec() call:
         char* error_message;
         if (asprintf(&error_message, "exec(\"%s\")", cmd) == -1) error_message = "exec()";
         perror(error_message);
@@ -203,7 +201,6 @@ JNIEXPORT jint JNICALL Java_com_raj_ros_terminal_JNI_waitFor(JNIEnv* ROS_UNUSED(
     } else if (WIFSIGNALED(status)) {
         return -WTERMSIG(status);
     } else {
-        // Should never happen - waitpid(2) says "One of the first three macros will evaluate to a non-zero (true) value".
         return 0;
     }
 }

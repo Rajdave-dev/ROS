@@ -440,7 +440,6 @@ public final class WcWidth {
         }
 
         // C0/C1 control characters
-        // Termux change: Return 0 instead of -1.
         if (ucs < 32 || (0x07F <= ucs && ucs < 0x0A0)) return 0;
 
         // combining characters with zero width

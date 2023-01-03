@@ -9,33 +9,14 @@ import java.util.Locale;
 import java.util.Objects;
 import java.util.Stack;
 
-/**
- * Renders text into a screen. Contains all the terminal-specific knowledge and state. Emulates a subset of the X Window
- * System xterm terminal, which in turn is an emulator for a subset of the Digital Equipment Corporation vt100 terminal.
- * <p>
- * References:
- * <ul>
- * <li>http://invisible-island.net/xterm/ctlseqs/ctlseqs.html</li>
- * <li>http://en.wikipedia.org/wiki/ANSI_escape_code</li>
- * <li>http://man.he.net/man4/console_codes</li>
- * <li>http://bazaar.launchpad.net/~leonerd/libvterm/trunk/view/head:/src/state.c</li>
- * <li>http://www.columbia.edu/~kermit/k95manual/iso2022.html</li>
- * <li>http://www.vt100.net/docs/vt510-rm/chapter4</li>
- * <li>http://en.wikipedia.org/wiki/ISO/IEC_2022 - for 7-bit and 8-bit GL GR explanation</li>
- * <li>http://bjh21.me.uk/all-escapes/all-escapes.txt - extensive!</li>
- * <li>http://woldlab.caltech.edu/~diane/kde4.10/workingdir/kubuntu/konsole/doc/developer/old-documents/VT100/techref.
- * html - document for konsole - accessible!</li>
- * </ul>
- */
+
 public final class TerminalEmulator {
 
-    /** Log unknown or unimplemented escape sequences received from the shell process. */
     private static final boolean LOG_ESCAPE_SEQUENCES = false;
 
     public static final int MOUSE_LEFT_BUTTON = 0;
 
-    /** Mouse moving while having left mouse button pressed. */
-    public static final int MOUSE_LEFT_BUTTON_MOVED = 32;
+     public static final int MOUSE_LEFT_BUTTON_MOVED = 32;
     public static final int MOUSE_WHEELUP_BUTTON = 64;
     public static final int MOUSE_WHEELDOWN_BUTTON = 65;
 
@@ -43,8 +24,7 @@ public final class TerminalEmulator {
     public static final int CURSOR_STYLE_UNDERLINE = 1;
     public static final int CURSOR_STYLE_BAR = 2;
 
-    /** Used for invalid data - http://en.wikipedia.org/wiki/Replacement_character#Replacement_character */
-    public static final int UNICODE_REPLACEMENT_CHAR = 0xFFFD;
+     public static final int UNICODE_REPLACEMENT_CHAR = 0xFFFD;
 
     /** Escape processing: Not currently in an escape sequence. */
     private static final int ESC_NONE = 0;
