@@ -16,6 +16,7 @@ Currently in beta so download it from [Actions](https://github.com/Rajdave-dev/R
 # Currently Working on:
 1. Adding Linux desktop experience.
 2. Adding more distribution.
+3. Adding more architecture support. 
 
 # Bugs Report.
 You can report bugs on [Issues](https://github.com/Rajdave-dev/ROS/issues) page or [Discord](https://discord.gg/HyCxF3tjZY) or [Telegram](https://t.me/rosbydave).
