@@ -26,7 +26,8 @@ No fees. Yet Donation recommended. As per your wish.
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/extremegamerzyt?country.x=IN&locale.x=en_GB)
 
 # Currently Working on:
-Create binary for arm-v7, x86, x86_64.
+1. Adding Linux desktop experience.
+
 
 # Credits.
 1. Created by me(Raj dave, owner of Dave & co).
