@@ -22,6 +22,8 @@ public class Variables {
     public static final String SYSTEM_LIBS_DIR=ROS_SYSTEM_DIR+"/libexec";
     public static final String SYSTEM_TMP_DIR=ROS_SYSTEM_DIR+"/tmp";
     public static final String VISIBLE_TO_DOCS=LINUX_DIR;
+    public static final String ICONS_FOR_APP_DIR=ROS_SYSTEM_DIR+"/icons";
+    public static final String WALLPAPER_DIR=ROS_SYSTEM_DIR+"/wallpapers";
     
     public static final String getCurrentHome(){ 
         return VISIBLE_TO_DOCS+"/root"; 

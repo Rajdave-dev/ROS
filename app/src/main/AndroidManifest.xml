@@ -56,6 +56,11 @@
             android:screenOrientation="sensorLandscape"
             android:exported="true"/>    
         <activity
+            android:name=".DesktopActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorLandscape"
+            android:exported="true"/>    
+        <activity
             android:name=".CrashHandler"
             android:configChanges="orientation"
             android:screenOrientation="sensorLandscape"
