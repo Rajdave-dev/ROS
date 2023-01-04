@@ -11,14 +11,16 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.StrictMode;
 import android.system.Os;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Pair;
 import android.view.View;
 import android.widget.Button;
 import android.app.*;
+import android.widget.EditText;
 import androidx.annotation.MainThread;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.textview.MaterialTextView;
-import com.raj.ros.DesktopActivity;
 import com.raj.ros.InstallerActivity;
 import com.raj.ros.Variables;
 import com.raj.ros.helper.Helper;
@@ -41,26 +43,19 @@ import java.util.zip.ZipInputStream;
 
 public class InstallerActivity extends AppCompatActivity {
     
-    private boolean needLinux=false;
-    
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Helper.hideSystemUI(getWindow());
 		setContentView(R.layout.activity_installer);
-        MaterialTextView textView = findViewById(R.id.output);
-        textView.append("ROS Installer Version "+BuildConfig.VERSION_NAME+"Starting Linux (Currently only Ubuntu 22.10) installation.");
+        com.google.android.material.textview.MaterialTextView textView = findViewById(R.id.output);
+        textView.append("ROS Installer Version "+BuildConfig.VERSION_NAME);
     }
     
     @Override
     protected void onStart() {
         super.onStart();
-        needLinux=true;
-        install();
-    }
-    
-    void install(){
         installRap();
     }
     
@@ -135,7 +130,8 @@ public class InstallerActivity extends AppCompatActivity {
                     Helper.installROOTFS(InstallerActivity.this,R.raw.rootfs);
                     Helper.installROOTFS(InstallerActivity.this,R.raw.patch);
                     Shell.SH.run(new String[]{"."+Variables.SYSTEM_EXEC_DIR+"/busybox --install -s " + Variables.SYSTEM_EXEC_DIR});
-                    startActivity(new Intent(InstallerActivity.this,DesktopActivity.class));
+                    Intent install = new Intent(InstallerActivity.this,TerminalActivity.class);
+                    startActivity(install);
                     finish();
                 } catch (final Exception e) {
                 }

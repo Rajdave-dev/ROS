@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this,InstallerActivity.class));
             finish();
         }else{
-        startActivity(new Intent(MainActivity.this,DesktopActivity.class));
+        startActivity(new Intent(MainActivity.this,TerminalActivity.class));
         finish();
         }
     }
